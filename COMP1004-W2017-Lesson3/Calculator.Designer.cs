@@ -307,6 +307,7 @@
             this.ClientSize = new System.Drawing.Size(302, 433);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.CalculatorTableLayout);
+            this.MaximizeBox = false;
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.CalculatorTableLayout.ResumeLayout(false);
