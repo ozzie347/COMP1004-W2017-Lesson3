@@ -50,7 +50,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.CalculatorTableLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // CalculatorTableLayout
@@ -314,23 +316,34 @@
             // ResultTextBox
             // 
             this.ResultTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultTextBox.Location = new System.Drawing.Point(22, 53);
+            this.ResultTextBox.Location = new System.Drawing.Point(22, 127);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ResultTextBox.Size = new System.Drawing.Size(246, 64);
             this.ResultTextBox.TabIndex = 3;
+            // 
+            // LogoPictureBox
+            // 
+            this.LogoPictureBox.Image = global::COMP1004_W2017_Lesson3.Properties.Resources.CalculatorLogo;
+            this.LogoPictureBox.Location = new System.Drawing.Point(1, 12);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(300, 90);
+            this.LogoPictureBox.TabIndex = 4;
+            this.LogoPictureBox.TabStop = false;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 433);
+            this.Controls.Add(this.LogoPictureBox);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.CalculatorTableLayout);
             this.MaximizeBox = false;
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.CalculatorTableLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,5 +372,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox ResultTextBox;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
     }
 }
